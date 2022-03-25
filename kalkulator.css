@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  background-color: silver;
+  width: 400px;
+  border: 2px solid darkgrey;
+  margin: 20px auto;
+}
+
+#container button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 20%, 82%);
+}
+#container button:active {
+  background-color: hsl(10, 100%, 80%);
+}
+
+#main-header {
+  background-color: rgb(107, 103, 103);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-header,
+.menu {
+  width: 33px;
+  height: 33px;
+  background-color: hsl(0, 6%, 91%);
+}
+
+#container .button-close:hover {
+  background-color: red;
+}
+/* .button-minimise {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/Vp9WvV7YKdH4k8sKRePcE8-320-80.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+} jak dodac content do button bezposrednio z linka, bez pseudoelementu i bez kodu w html */
+
+#second-menu {
+  display: flex;
+  flex-direction: column;
+}
+/* PIERWSZA LINIA KODU*/
+.menu-line-1 {
+  display: flex;
+}
+.menu1 {
+  display: flex;
+  flex-basis: 200px;
+  gap: 20px;
+}
+.menu-left {
+  position: relative;
+}
+
+/* .menu-left,
+.menu-middle,
+.menu-right {
+  flex-basis: 40px;
+} */
+.menu1 h2 {
+  flex-basis: 100px;
+}
+.menu2 {
+  display: flex;
+  flex-basis: 200px;
+  justify-content: flex-end;
+}
+
+/*DRUGA LINIA KODU */
+.count-window {
+  height: 50px;
+  font-size: 40px;
+  background-color: hsl(200, 50%, 50%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+input[id="wynik"] {
+  width: 60px;
+  height: 40px;
+  font-size: 30px;
+  background-color: hsla(0, 12%, 65%);
+  /* position: relative;
+  top: -4px;
+  left: -4px;
+  font-size: 20px; */
+}
+input[id="wynik"]:focus {
+  background-color: hsl(10, 100%, 80%);
+  color: white;
+}
+/*TRZECIA LINIA KODU */
+.bottom-menu {
+  background-color: hsl();
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(6, 50px);
+  gap: 5px 5px;
+  justify-content: center;
+}
+
+.opt24 {
+  background-color: hsl(220, 100%, 90%);
+}
+#container .opt24:hover {
+  background-color: hsl(200, 100%, 40%);
+}
+
+/*lista do kalkulatora */
+
+#lista {
+  font-size: 12px;
+  height: 235px;
+  width: 100px;
+  text-align: center;
+  display: none;
+  background-color: hsl(200, 100%, 40%);
+  border: 2px solid black;
+  opacity: 0.8;
+  position: absolute;
+  top: 31px;
+  left: -2px;
+}
+
+#lista ul {
+  list-style-type: none;
+}
+#lista .ul1 li:last-child {
+  border-bottom: none;
+}
+
+#lista li {
+  padding: 5px;
+  border-bottom: 2px dotted black;
+}
+
+#lista li:hover {
+  color: white;
+  background-color: hsl(200, 100%, 20%);
+  cursor: pointer;
+}
+#lista p {
+  font-weight: bold;
+}
+#lista .ul2 p {
+  border-top: 2px solid black;
+}
+#container .menu-left:hover > #lista {
+  display: block;
+}
